@@ -19,11 +19,7 @@ public class Emp_Payroll {
         System.out.println(banner);
 
         PayrollSystem payroll = new PayrollSystem();
-
         payroll.login_System();
-
-
-
     }
 
 
