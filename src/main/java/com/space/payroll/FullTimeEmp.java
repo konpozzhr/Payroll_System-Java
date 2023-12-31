@@ -31,7 +31,6 @@ public class FullTimeEmp extends Employee{
     }
 
 
-
     public double inputSalary(){
         System.out.print("Input salary : ");
         monthlySalary = sc.nextDouble();

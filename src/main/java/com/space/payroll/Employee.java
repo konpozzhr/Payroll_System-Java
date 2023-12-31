@@ -57,7 +57,6 @@ public abstract class Employee {
     @Override
     public String toString(){
 
-//        return "Employee [Name = " + getName() + ", ID = " + getId() + ", Salary = " +calculateSalary() + " ]";
         return String.format("Employee [ ID = %d, Name = %s, Salary = %s ]",
                 getId(), getName(), currencyInstance.format(calculateSalary()));
 

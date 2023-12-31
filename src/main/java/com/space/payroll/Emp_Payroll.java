@@ -1,10 +1,9 @@
 package com.space.payroll;
 
-import java.io.IOException;
 
 public class Emp_Payroll {
 
-    public Emp_Payroll() throws InterruptedException, IOException {
+    public Emp_Payroll() {
 
 
        String banner = """
@@ -24,19 +23,11 @@ public class Emp_Payroll {
         payroll.login_System();
 
 
-//        try {
-//
-//            payroll.login_System();
-//
-//        }catch (Exception ex){
-//            System.out.println("\n" + PayrollSystem.ANSI_RED + ex + PayrollSystem.ANSI_RESET);
-//
-//        }
 
     }
 
 
-    public static void main(String[] args) throws InterruptedException, IOException {
+    public static void main(String[] args) {
 
         new Emp_Payroll();
     }

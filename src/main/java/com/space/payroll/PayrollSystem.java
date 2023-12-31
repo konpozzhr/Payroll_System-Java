@@ -1,6 +1,5 @@
 package com.space.payroll;
 
-import java.io.IOException;
 import java.util.*;
 
 public class PayrollSystem {
@@ -192,7 +191,6 @@ public class PayrollSystem {
                 int id = Integer.parseInt(sc.next());
                 for(Employee employee : employeeList){
                     if(employee.getId() == id){
-//                    empFound = employee;
                         System.out.println("\n" + employee);
                         break;
                     }
@@ -241,7 +239,7 @@ public class PayrollSystem {
 
     Scanner sc = new Scanner(System.in);
 
-    public void login_System() throws IOException {
+    public void login_System() {
 
         try{
 
