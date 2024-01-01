@@ -55,7 +55,6 @@ public class PayrollSystem {
             }
             if(!empID_Exist)
                 employeeList.add(fullEmp);
-
         }
 
 
@@ -230,9 +229,16 @@ public class PayrollSystem {
 
 
     public void displayEmployee(){
-        for(Employee emp : employeeList){
-            System.out.println(emp);
+
+        if(employeeList.isEmpty()){
+            System.out.println(ANSI_YELLOW + "\nEmployee list is empty" + ANSI_RESET);
         }
+        else{
+            for(Employee emp : employeeList){
+                System.out.println(emp);
+            }
+        }
+
         menu();
     }
 
